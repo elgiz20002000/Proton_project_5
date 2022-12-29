@@ -121,28 +121,7 @@ html {
 }
 
 
-.left input[type=file] {
-  position: relative;
- &::-webkit-file-upload-button {
-    visibility: hidden;
-  }
-  &::after {
-    content: 'YÜKLƏ';
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: white;
-    background-color: #888989;
-    position: absolute;
-    right: 4px;
-    float: none;
-    height: 31px;
-    margin: 0;
-    padding: 0 20px;
-    font-size: 13px;
-    line-height: 31px;
-  }
-}
+
 
 
 

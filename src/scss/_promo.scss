@@ -113,6 +113,8 @@ button[type=button] {
         }
         &:hover {
             .slick-next , .slick-prev { 
+                width: max-content;
+                height: max-content;
                 opacity: 1;
             }
         }

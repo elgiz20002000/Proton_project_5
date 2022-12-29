@@ -1,0 +1,21 @@
+.support_project {
+    padding: 40px 0;
+    .contents_list {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .content {
+            width: 45%;
+            h3 {
+                font-size: 20px;
+            }
+            .text {
+                line-height: 24px;
+                text-align: justify;
+                font-size: 14px;
+                color: #656565;
+            }
+        }
+    }
+}

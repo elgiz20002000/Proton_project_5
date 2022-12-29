@@ -1,0 +1,28 @@
+.reports {
+    padding: 40px 0;
+    .reports_list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        .report {
+            padding: 50px 0;
+            width: 25%;
+            text-align: center;
+            img {
+                width: 73px;
+                height: 73px;
+            }
+            .count {
+                color: #fab10d;
+                font-size: 40px;
+            }
+            h3 {
+                color:#222;
+                line-height: 24px;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

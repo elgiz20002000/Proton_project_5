@@ -1,0 +1,34 @@
+#waterfall { margin: 10px; }
+
+#waterfall li {
+  opacity: 0;
+  transform: translateY(100px);
+  list-style-type: none;
+
+  img {
+    transition: .3s all;
+    width: 100%;
+  }
+}
+
+#waterfall li.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s, top 1s;
+}
+
+#waterfall li > div {
+  font-size: 32px;
+  border-radius: 3px;
+  margin: 10px;
+  transition: all 0.5s;
+}
+
+#waterfall li > div:hover {
+//   transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(038, 191, 64, 0.1);
+  transition: all 0.3s;
+  img {
+    transform: scale(1.4);
+  }
+}

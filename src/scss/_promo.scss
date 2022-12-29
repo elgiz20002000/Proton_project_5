@@ -131,7 +131,6 @@ button[type=button] {
         position: fixed;
         top: 0;
         &.active {
-            height: max-content;
             background: black;
         }
     }

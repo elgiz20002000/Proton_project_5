@@ -2,19 +2,14 @@ import { button } from "./button.js";
 import { file } from "./file.js";
 import { filter } from "./filter.js";
 import { formValidation } from "./form_validation.js";
+import { sidenav } from "./sidenav.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  file();
-
-  button();
-
+  file()
+  button()
   filter()
+  sidenav()
 
-  // $("#waterfall").NewWaterfall({
-  //   width: 270,
-  //   delay: 60,
-  //   repeatShow: false,
-  // });
 
   $(".promo .slider").slick({
     autoplay: true,

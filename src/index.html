@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
@@ -12,13 +15,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
+      <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="fullscreen-lightbox-gallery/js/lightboxed/lightboxed.css">
     <link rel="stylesheet" href="css/index.min.css">
     <title>STOMATOLOJİ DAYAQ LAYİHƏSİ</title>
@@ -142,318 +145,328 @@
         </div>
         <div class="container">
             <div class="forms_wrapper">
+              
+              <div class="item">
+                <h2>HƏKİM VƏ TEXNİKLƏRİN QEYDİYYATI</h2>
                 <div class="left form">
-                    <h2>HƏKİM VƏ TEXNİKLƏRİN QEYDİYYATI</h2>
-                    <form id="form" novalidate >
+                <form id="form" novalidate >
+                    <div class="input">
+                        <input placeholder="Ad, soyad və ata adı *" type="text" name="name" id="name">
+                        <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
+                        <i class="icon-append fa fa-user"></i>
+                    </div>
+                 
+                    <div class="area_list">
+                        <h3>Hansı sahədə yardım edə bilərsiz? * </h3>
+                        <ul class="professions">
+                            <li>
+                                <label  class="checkbox">
+                                    <input class="checkbox" name="profession" value="Cərrahiyə"  type="checkbox">
+                                    <i></i>
+                                </label>
+                                Cərrahiyə
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                      <input class="checkbox" name="profession" value="İmplant" type="checkbox">
+                                    <i></i>
+                                </label>
+                                İmplant
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                     <input name="profession" value="Terapiya" type="checkbox">
+                                    <i></i>
+                                </label>
+                                Terapiya
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                      <input name="profession" value="Uşaq stomatologiyası" type="checkbox">
+                                    <i></i>
+                                </label>
+                                  Uşaq stomatologiyası
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                          <input name="profession" value="Ortodontiya" type="checkbox">
+                                    <i></i>
+                                </label>
+                                Ortodontiya
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                     <input name="profession" value="Periodontologiya" type="checkbox">
+                                    <i></i>
+                                </label>
+                                  Periodontologiya
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                      <input name="profession" value="Ortopediya" type="checkbox">
+                                    <i></i>
+                                </label>
+                                Ortopediya
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                        <input name="profession" value="Diş texniki" type="checkbox">
+                                    <i></i>
+                                </label>
+                                Diş texniki
+                            </li>
+                        </ul>
+
+                        <div class="region">
+                            <input type="text" list="region" placeholder="Fəaliyyət göstərdiyi regionu seçin *" name="region">
+                            <datalist id="region" name="region">
+                                <option value="Abşeron">Abşeron</option>
+                                <option value="Ağcabədi">Ağcabədi</option>
+                                <option value="Ağdam">Ağdam</option>
+                                <option value="Ağdaş">Ağdaş</option>
+                                <option value="Ağstafa">Ağstafa</option>
+                                <option value="Ağsu">Ağsu</option>
+                                <option value="Astara">Astara</option>
+                                <option value="Bakı">Bakı</option>
+                                <option value="Babək">Babək</option>
+                                <option value="Balakən">Balakən</option>
+                                <option value="Beyləqan">Beyləqan</option>
+                                <option value="Bərdə">Bərdə</option>
+                                <option value="Biləsuvar">Biləsuvar</option>
+                                <option value="Cəbrayıl">Cəbrayıl</option>
+                                <option value="Cəlilabad">Cəlilabad</option>
+                                <option value="Culfa">Culfa</option>
+                                <option value="Daşkəsən">Daşkəsən</option>
+                                <option value="Füzuli">Füzuli</option>
+                                <option value="Gədəbəy">Gədəbəy</option>
+                                <option value="Gəncə">Gəncə</option>
+                                <option value="Goranboy">Goranboy</option>
+                                <option value="Göyçay">Göyçay</option>
+                                <option value="Göygöl">Göygöl</option>
+                                <option value="Hacıqabul">Hacıqabul</option>
+                                <option value="Xaçmaz">Xaçmaz</option>
+                                <option value="Xızı">Xızı</option>
+                                <option value="Xocalı">Xocalı</option>
+                                <option value="Xocavənd">Xocavənd</option>
+                                <option value="İmişli">İmişli</option>
+                                <option value="İsmayıllı">İsmayıllı</option>
+                                <option value="Kəlbəcər">Kəlbəcər</option>
+                                <option value="Kəngərli">Kəngərli</option>
+                                <option value="Kürdəmir">Kürdəmir</option>
+                                <option value="Qax">Qax</option>
+                                <option value="Qazax">Qazax</option>
+                                <option value="Qəbələ">Qəbələ</option>
+                                <option value="Qobustan">Qobustan</option>
+                                <option value="Quba">Quba</option>
+                                <option value="Qubadlı">Qubadlı</option>
+                                <option value="Qusar">Qusar</option>
+                                <option value="Laçın">Laçın</option>
+                                <option value="Lənkəran">Lənkəran</option>
+                                <option value="Lerik">Lerik</option>
+                                <option value="Lənkəran">Lənkəran</option>
+                                <option value="Masallı">Masallı</option>
+                                <option value="Mingəçevir">Mingəçevir</option>
+                                <option value="Naxçıvan">Naxçıvan</option>
+                                <option value="Naftalan">Naftalan</option>
+                                <option value="Neftçala">Neftçala</option>
+                                <option value="Oğuz">Oğuz</option>
+                                <option value="Ordubad">Ordubad</option>
+                                <option value="Saatlı">Saatlı</option>
+                                <option value="Sabirabad">Sabirabad</option>
+                                <option value="Salyan">Salyan</option>
+                                <option value="Samux">Samux</option>
+                                <option value="Sədərək">Sədərək</option>
+                                <option value="Şabran">Şabran</option>
+                                <option value="Şahbuz">Şahbuz</option>
+                                <option value="Şamaxı">Şamaxı</option> 
+                                <option value="Şəki">Şəki</option>
+                                <option value="Şəmkir">Şəmkir</option>
+                                <option value="Şərur">Şərur</option>
+                                <option value="Siyəzən">Siyəzən</option>
+                                <option value="Şirvan">Şirvan</option>
+                                <option value="Şuşa">Şuşa</option>
+                                <option value="Sumqayıt">Sumqayıt</option>
+                                <option value="Tərtər">Tərtər</option>
+                                <option value="Tovuz">Tovuz</option>
+                                <option value="Ucar">Ucar</option>
+                                <option value="Yardımlı">Yardımlı</option>
+                                <option value="Yevlax">Yevlax</option>
+                                <option value="Xankəndi">Xankəndi</option>
+                                <option value="Zaqatala">Zaqatala</option>
+                                <option value="Zəngilan">Zəngilan</option>
+                                <option value="Zərdab">Zərdab</option>
+                                </datalist>
+                        </div>
+
                         <div class="input">
-                            <input placeholder="Ad, soyad və ata adı *" type="text" name="name" id="name">
+                            <input placeholder="İş yerinin ünvanı *" type="text" name="adress">
                             <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
-                            <i class="icon-append fa fa-user"></i>
+                            <i class="icon-append fa fa-home"></i>
                         </div>
-                     
-                        <div class="area_list">
-                            <h3>Hansı sahədə yardım edə bilərsiz? * </h3>
-                            <ul class="professions">
-                                <li>
-                                    <label  class="checkbox">
-                                        <input class="checkbox" name="profession" value="Cərrahiyə"  type="checkbox">
-                                        <i></i>
-                                    </label>
-                                    Cərrahiyə
-                                </li>
-                                <li>
-                                    <label class="checkbox">
-                                          <input class="checkbox" name="profession" value="İmplant" type="checkbox">
-                                        <i></i>
-                                    </label>
-                                    İmplant
-                                </li>
-                                <li>
-                                    <label class="checkbox">
-                                         <input name="profession" value="Terapiya" type="checkbox">
-                                        <i></i>
-                                    </label>
-                                    Terapiya
-                                </li>
-                                <li>
-                                    <label class="checkbox">
-                                          <input name="profession" value="Uşaq stomatologiyası" type="checkbox">
-                                        <i></i>
-                                    </label>
-                                      Uşaq stomatologiyası
-                                </li>
-                                <li>
-                                    <label class="checkbox">
-                                              <input name="profession" value="Ortodontiya" type="checkbox">
-                                        <i></i>
-                                    </label>
-                                    Ortodontiya
-                                </li>
-                                <li>
-                                    <label class="checkbox">
-                                         <input name="profession" value="Periodontologiya" type="checkbox">
-                                        <i></i>
-                                    </label>
-                                      Periodontologiya
-                                </li>
-                                <li>
-                                    <label class="checkbox">
-                                          <input name="profession" value="Ortopediya" type="checkbox">
-                                        <i></i>
-                                    </label>
-                                    Ortopediya
-                                </li>
-                                <li>
-                                    <label class="checkbox">
-                                            <input name="profession" value="Diş texniki" type="checkbox">
-                                        <i></i>
-                                    </label>
-                                    Diş texniki
-                                </li>
-                            </ul>
 
-                            <div class="region">
-                                <input type="text" list="region" placeholder="Fəaliyyət göstərdiyi regionu seçin *" name="region">
-                                <datalist id="region" name="region">
-                                    <option value="Abşeron">Abşeron</option>
-                                    <option value="Ağcabədi">Ağcabədi</option>
-                                    <option value="Ağdam">Ağdam</option>
-                                    <option value="Ağdaş">Ağdaş</option>
-                                    <option value="Ağstafa">Ağstafa</option>
-                                    <option value="Ağsu">Ağsu</option>
-                                    <option value="Astara">Astara</option>
-                                    <option value="Bakı">Bakı</option>
-                                    <option value="Babək">Babək</option>
-                                    <option value="Balakən">Balakən</option>
-                                    <option value="Beyləqan">Beyləqan</option>
-                                    <option value="Bərdə">Bərdə</option>
-                                    <option value="Biləsuvar">Biləsuvar</option>
-                                    <option value="Cəbrayıl">Cəbrayıl</option>
-                                    <option value="Cəlilabad">Cəlilabad</option>
-                                    <option value="Culfa">Culfa</option>
-                                    <option value="Daşkəsən">Daşkəsən</option>
-                                    <option value="Füzuli">Füzuli</option>
-                                    <option value="Gədəbəy">Gədəbəy</option>
-                                    <option value="Gəncə">Gəncə</option>
-                                    <option value="Goranboy">Goranboy</option>
-                                    <option value="Göyçay">Göyçay</option>
-                                    <option value="Göygöl">Göygöl</option>
-                                    <option value="Hacıqabul">Hacıqabul</option>
-                                    <option value="Xaçmaz">Xaçmaz</option>
-                                    <option value="Xızı">Xızı</option>
-                                    <option value="Xocalı">Xocalı</option>
-                                    <option value="Xocavənd">Xocavənd</option>
-                                    <option value="İmişli">İmişli</option>
-                                    <option value="İsmayıllı">İsmayıllı</option>
-                                    <option value="Kəlbəcər">Kəlbəcər</option>
-                                    <option value="Kəngərli">Kəngərli</option>
-                                    <option value="Kürdəmir">Kürdəmir</option>
-                                    <option value="Qax">Qax</option>
-                                    <option value="Qazax">Qazax</option>
-                                    <option value="Qəbələ">Qəbələ</option>
-                                    <option value="Qobustan">Qobustan</option>
-                                    <option value="Quba">Quba</option>
-                                    <option value="Qubadlı">Qubadlı</option>
-                                    <option value="Qusar">Qusar</option>
-                                    <option value="Laçın">Laçın</option>
-                                    <option value="Lənkəran">Lənkəran</option>
-                                    <option value="Lerik">Lerik</option>
-                                    <option value="Lənkəran">Lənkəran</option>
-                                    <option value="Masallı">Masallı</option>
-                                    <option value="Mingəçevir">Mingəçevir</option>
-                                    <option value="Naxçıvan">Naxçıvan</option>
-                                    <option value="Naftalan">Naftalan</option>
-                                    <option value="Neftçala">Neftçala</option>
-                                    <option value="Oğuz">Oğuz</option>
-                                    <option value="Ordubad">Ordubad</option>
-                                    <option value="Saatlı">Saatlı</option>
-                                    <option value="Sabirabad">Sabirabad</option>
-                                    <option value="Salyan">Salyan</option>
-                                    <option value="Samux">Samux</option>
-                                    <option value="Sədərək">Sədərək</option>
-                                    <option value="Şabran">Şabran</option>
-                                    <option value="Şahbuz">Şahbuz</option>
-                                    <option value="Şamaxı">Şamaxı</option> 
-                                    <option value="Şəki">Şəki</option>
-                                    <option value="Şəmkir">Şəmkir</option>
-                                    <option value="Şərur">Şərur</option>
-                                    <option value="Siyəzən">Siyəzən</option>
-                                    <option value="Şirvan">Şirvan</option>
-                                    <option value="Şuşa">Şuşa</option>
-                                    <option value="Sumqayıt">Sumqayıt</option>
-                                    <option value="Tərtər">Tərtər</option>
-                                    <option value="Tovuz">Tovuz</option>
-                                    <option value="Ucar">Ucar</option>
-                                    <option value="Yardımlı">Yardımlı</option>
-                                    <option value="Yevlax">Yevlax</option>
-                                    <option value="Xankəndi">Xankəndi</option>
-                                    <option value="Zaqatala">Zaqatala</option>
-                                    <option value="Zəngilan">Zəngilan</option>
-                                    <option value="Zərdab">Zərdab</option>
-                                    </datalist>
-                            </div>
+                        <div class="input">
+                            <input minlength="10" maxlength="15" name="tel" placeholder="055XXXXXXX*" type="tel">
+                            <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
+                            <i class="icon-append fa fa-phone"></i>
+                        </div>
 
-                            <div class="input">
-                                <input placeholder="İş yerinin ünvanı *" type="text" name="adress">
-                                <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
-                                <i class="icon-append fa fa-home"></i>
-                            </div>
-
-                            <div class="input">
-                                <input minlength="10" maxlength="15" name="tel" placeholder="055XXXXXXX*" type="tel">
-                                <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
-                                <i class="icon-append fa fa-phone"></i>
-                            </div>
-
-                            <div class="input">
-                                <input name="email" placeholder="E-mail *" type="email">
-                                <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
-                                <i class="icon-append fa fa-envelope"></i>
-                            </div>
-                           
-                          
-                          
-                            <div class="file_input_wrapper">
-                                <h3>
-                                    Foto portret şəklinizi yükləyin * 
-                                </h3>
-                                <div class="file_wrapper">
-                                    <input name="file"  type="file">
-                                </div>
-                            </div>
-                            <div class="wrapper">
-                                <button class="btn button" id="doc_submit" type="submit">GÖNDƏR</button>
+                        <div class="input">
+                            <input name="email" placeholder="E-mail *" type="email">
+                            <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
+                            <i class="icon-append fa fa-envelope"></i>
+                        </div>
+                       
+                      
+                      
+                        <div class="file_input_wrapper">
+                            <h3>
+                                Foto portret şəklinizi yükləyin * 
+                            </h3>
+                            <div class="file_wrapper">
+                              <input placeholder="Şəkili yükləyin" type="text" class="text">
+                                <input name="file"  type="file">
                             </div>
                         </div>
-                    </form>
-                    <div class="err_doc"></div>
-                </div>
+                        <div class="wrapper">
+                            <button class="btn button" id="doc_submit" type="submit">GÖNDƏR</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="err_doc"></div>
+            </div>
+          </div>
+              <div class="item">
+                <h2>PASİYENTLƏRİN MÜRACİƏTİ</h2>
                 <div class="right form">
-                    <h2>PASİYENTLƏRİN MÜRACİƏTİ</h2>
-                    <form novalidate >
-                        <div class="input">
-                            <input placeholder="Ad, soyad və ata adı *" type="text" name="name" id="">
-                            <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
-                            <i class="icon-append fa fa-user"></i>
-                        </div>
-                        <div class="area_list">
-                            <div class="region">
-                                <input type="text" list="region" placeholder="Fəaliyyət göstərdiyi regionu seçin *" name="region">
-                                <datalist id="region" name="region">
-                                    <option value="Abşeron">Abşeron</option>
-                                    <option value="Ağcabədi">Ağcabədi</option>
-                                    <option value="Ağdam">Ağdam</option>
-                                    <option value="Ağdaş">Ağdaş</option>
-                                    <option value="Ağstafa">Ağstafa</option>
-                                    <option value="Ağsu">Ağsu</option>
-                                    <option value="Astara">Astara</option>
-                                    <option value="Bakı">Bakı</option>
-                                    <option value="Babək">Babək</option>
-                                    <option value="Balakən">Balakən</option>
-                                    <option value="Beyləqan">Beyləqan</option>
-                                    <option value="Bərdə">Bərdə</option>
-                                    <option value="Biləsuvar">Biləsuvar</option>
-                                    <option value="Cəbrayıl">Cəbrayıl</option>
-                                    <option value="Cəlilabad">Cəlilabad</option>
-                                    <option value="Culfa">Culfa</option>
-                                    <option value="Daşkəsən">Daşkəsən</option>
-                                    <option value="Füzuli">Füzuli</option>
-                                    <option value="Gədəbəy">Gədəbəy</option>
-                                    <option value="Gəncə">Gəncə</option>
-                                    <option value="Goranboy">Goranboy</option>
-                                    <option value="Göyçay">Göyçay</option>
-                                    <option value="Göygöl">Göygöl</option>
-                                    <option value="Hacıqabul">Hacıqabul</option>
-                                    <option value="Xaçmaz">Xaçmaz</option>
-                                    <option value="Xızı">Xızı</option>
-                                    <option value="Xocalı">Xocalı</option>
-                                    <option value="Xocavənd">Xocavənd</option>
-                                    <option value="İmişli">İmişli</option>
-                                    <option value="İsmayıllı">İsmayıllı</option>
-                                    <option value="Kəlbəcər">Kəlbəcər</option>
-                                    <option value="Kəngərli">Kəngərli</option>
-                                    <option value="Kürdəmir">Kürdəmir</option>
-                                    <option value="Qax">Qax</option>
-                                    <option value="Qazax">Qazax</option>
-                                    <option value="Qəbələ">Qəbələ</option>
-                                    <option value="Qobustan">Qobustan</option>
-                                    <option value="Quba">Quba</option>
-                                    <option value="Qubadlı">Qubadlı</option>
-                                    <option value="Qusar">Qusar</option>
-                                    <option value="Laçın">Laçın</option>
-                                    <option value="Lənkəran">Lənkəran</option>
-                                    <option value="Lerik">Lerik</option>
-                                    <option value="Lənkəran">Lənkəran</option>
-                                    <option value="Masallı">Masallı</option>
-                                    <option value="Mingəçevir">Mingəçevir</option>
-                                    <option value="Naxçıvan">Naxçıvan</option>
-                                    <option value="Naftalan">Naftalan</option>
-                                    <option value="Neftçala">Neftçala</option>
-                                    <option value="Oğuz">Oğuz</option>
-                                    <option value="Ordubad">Ordubad</option>
-                                    <option value="Saatlı">Saatlı</option>
-                                    <option value="Sabirabad">Sabirabad</option>
-                                    <option value="Salyan">Salyan</option>
-                                    <option value="Samux">Samux</option>
-                                    <option value="Sədərək">Sədərək</option>
-                                    <option value="Şabran">Şabran</option>
-                                    <option value="Şahbuz">Şahbuz</option>
-                                    <option value="Şamaxı">Şamaxı</option> 
-                                    <option value="Şəki">Şəki</option>
-                                    <option value="Şəmkir">Şəmkir</option>
-                                    <option value="Şərur">Şərur</option>
-                                    <option value="Siyəzən">Siyəzən</option>
-                                    <option value="Şirvan">Şirvan</option>
-                                    <option value="Şuşa">Şuşa</option>
-                                    <option value="Sumqayıt">Sumqayıt</option>
-                                    <option value="Tərtər">Tərtər</option>
-                                    <option value="Tovuz">Tovuz</option>
-                                    <option value="Ucar">Ucar</option>
-                                    <option value="Yardımlı">Yardımlı</option>
-                                    <option value="Yevlax">Yevlax</option>
-                                    <option value="Xankəndi">Xankəndi</option>
-                                    <option value="Zaqatala">Zaqatala</option>
-                                    <option value="Zəngilan">Zəngilan</option>
-                                    <option value="Zərdab">Zərdab</option>
-                                    </datalist>
-                            </div>
+                  <form novalidate >
+                      <div class="input">
+                          <input placeholder="Ad, soyad və ata adı *" type="text" name="name" id="">
+                          <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
+                          <i class="icon-append fa fa-user"></i>
+                      </div>
+                      <div class="area_list">
+                          <div class="region">
+                              <input type="text" list="region" placeholder="Fəaliyyət göstərdiyi regionu seçin *" name="region">
+                              <datalist id="region" name="region">
+                                  <option value="Abşeron">Abşeron</option>
+                                  <option value="Ağcabədi">Ağcabədi</option>
+                                  <option value="Ağdam">Ağdam</option>
+                                  <option value="Ağdaş">Ağdaş</option>
+                                  <option value="Ağstafa">Ağstafa</option>
+                                  <option value="Ağsu">Ağsu</option>
+                                  <option value="Astara">Astara</option>
+                                  <option value="Bakı">Bakı</option>
+                                  <option value="Babək">Babək</option>
+                                  <option value="Balakən">Balakən</option>
+                                  <option value="Beyləqan">Beyləqan</option>
+                                  <option value="Bərdə">Bərdə</option>
+                                  <option value="Biləsuvar">Biləsuvar</option>
+                                  <option value="Cəbrayıl">Cəbrayıl</option>
+                                  <option value="Cəlilabad">Cəlilabad</option>
+                                  <option value="Culfa">Culfa</option>
+                                  <option value="Daşkəsən">Daşkəsən</option>
+                                  <option value="Füzuli">Füzuli</option>
+                                  <option value="Gədəbəy">Gədəbəy</option>
+                                  <option value="Gəncə">Gəncə</option>
+                                  <option value="Goranboy">Goranboy</option>
+                                  <option value="Göyçay">Göyçay</option>
+                                  <option value="Göygöl">Göygöl</option>
+                                  <option value="Hacıqabul">Hacıqabul</option>
+                                  <option value="Xaçmaz">Xaçmaz</option>
+                                  <option value="Xızı">Xızı</option>
+                                  <option value="Xocalı">Xocalı</option>
+                                  <option value="Xocavənd">Xocavənd</option>
+                                  <option value="İmişli">İmişli</option>
+                                  <option value="İsmayıllı">İsmayıllı</option>
+                                  <option value="Kəlbəcər">Kəlbəcər</option>
+                                  <option value="Kəngərli">Kəngərli</option>
+                                  <option value="Kürdəmir">Kürdəmir</option>
+                                  <option value="Qax">Qax</option>
+                                  <option value="Qazax">Qazax</option>
+                                  <option value="Qəbələ">Qəbələ</option>
+                                  <option value="Qobustan">Qobustan</option>
+                                  <option value="Quba">Quba</option>
+                                  <option value="Qubadlı">Qubadlı</option>
+                                  <option value="Qusar">Qusar</option>
+                                  <option value="Laçın">Laçın</option>
+                                  <option value="Lənkəran">Lənkəran</option>
+                                  <option value="Lerik">Lerik</option>
+                                  <option value="Lənkəran">Lənkəran</option>
+                                  <option value="Masallı">Masallı</option>
+                                  <option value="Mingəçevir">Mingəçevir</option>
+                                  <option value="Naxçıvan">Naxçıvan</option>
+                                  <option value="Naftalan">Naftalan</option>
+                                  <option value="Neftçala">Neftçala</option>
+                                  <option value="Oğuz">Oğuz</option>
+                                  <option value="Ordubad">Ordubad</option>
+                                  <option value="Saatlı">Saatlı</option>
+                                  <option value="Sabirabad">Sabirabad</option>
+                                  <option value="Salyan">Salyan</option>
+                                  <option value="Samux">Samux</option>
+                                  <option value="Sədərək">Sədərək</option>
+                                  <option value="Şabran">Şabran</option>
+                                  <option value="Şahbuz">Şahbuz</option>
+                                  <option value="Şamaxı">Şamaxı</option> 
+                                  <option value="Şəki">Şəki</option>
+                                  <option value="Şəmkir">Şəmkir</option>
+                                  <option value="Şərur">Şərur</option>
+                                  <option value="Siyəzən">Siyəzən</option>
+                                  <option value="Şirvan">Şirvan</option>
+                                  <option value="Şuşa">Şuşa</option>
+                                  <option value="Sumqayıt">Sumqayıt</option>
+                                  <option value="Tərtər">Tərtər</option>
+                                  <option value="Tovuz">Tovuz</option>
+                                  <option value="Ucar">Ucar</option>
+                                  <option value="Yardımlı">Yardımlı</option>
+                                  <option value="Yevlax">Yevlax</option>
+                                  <option value="Xankəndi">Xankəndi</option>
+                                  <option value="Zaqatala">Zaqatala</option>
+                                  <option value="Zəngilan">Zəngilan</option>
+                                  <option value="Zərdab">Zərdab</option>
+                                  </datalist>
+                          </div>
 
-                            <div class="input">
-                                <input placeholder="İş yerinin ünvanı *" type="text" name="adress">
-                                <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
-                                <i class="icon-append fa fa-home"></i>
-                            </div>
+                          <div class="input">
+                              <input placeholder="İş yerinin ünvanı *" type="text" name="adress">
+                              <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
+                              <i class="icon-append fa fa-home"></i>
+                          </div>
 
-                            <div class="input">
-                                <input minlength="10" maxlength="10"  name="tel" placeholder="055XXXXXXX*" type="tel">
-                                <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
-                                <i class="icon-append fa fa-phone"></i>
-                            </div>
+                          <div class="input">
+                              <input minlength="10" maxlength="10"  name="tel" placeholder="055XXXXXXX*" type="tel">
+                              <b class="tooltip tooltip-bottom-right">Mütləq xana</b> 
+                              <i class="icon-append fa fa-phone"></i>
+                          </div>
 
-                            <div class="file_input_wrapper first">
-                                <h3>
-                                    Pasiyentin şəxsiyyət vəsiqəsinin ön tərəfinin şəkilini yüklə *  
-                                </h3>
+                          <div class="file_input_wrapper first">
+                              <h3>
+                                  Pasiyentin şəxsiyyət vəsiqəsinin ön tərəfinin şəkilini yüklə *  
+                              </h3>
+                              <div class="file_wrapper">
+                                  <input placeholder="Sənəd yüklə" type="text" class="text">
+                                  <input name="file_1"  type="file">
+                              </div>
+                          </div>
+                          <div class="file_input_wrapper second">
+                              <h3>
+                                  Pasiyentin şəxsiyyət vəsiqəsinin arxa tərəfinin şəkilini yükləyin *  
+                              </h3>
                                 <div class="file_wrapper">
-                                    <input name="file_1"  type="file">
-                                </div>
-                            </div>
-                            <div class="file_input_wrapper second">
-                                <h3>
-                                    Pasiyentin şəxsiyyət vəsiqəsinin arxa tərəfinin şəkilini yükləyin *  
-                                </h3>
-                                  <div class="file_wrapper">
-                                    <input name="file_2"  type="file">
-                                </div>
-                            </div>
-                            <div class="wrapper">
-                                <button class="btn button" id="doc_submit" type="submit">GÖNDƏR</button>
-                            </div>
-                           
-                        </div>
-                    </form>
-                    <div class="err_doc"></div>
-                </div>
+                                    <input placeholder="Sənəd yüklə" type="text" class="text">
+                                  <input name="file_2"  type="file">
+                              </div>
+                          </div>
+                          <div class="wrapper">
+                              <button class="btn button" id="doc_submit" type="submit">GÖNDƏR</button>
+                          </div>
+                         
+                      </div>
+                  </form>
+                  <div class="err_doc"></div>
+              </div>
+              </div>
+                
+                
                 </div>
             </div>
         </div>
@@ -1246,162 +1259,153 @@
                 <div data-filter="events"  class="type"> TƏDBİRLƏR
                     <div class="info"></div> 
                 </div>
-                <div data-filter="emotions"  class="type"> EMOSİYALAR 
+                <div  data-filter="emotions"  class="type"> EMOSİYALAR 
                     <div class="info"></div> 
                 </div>
             </div>
+    
 
-            <ul class="boxes" id="waterfall">  
-                <li  data-type="projects" class="projects all studio isotope-item">
-                  <div>
-                    <a rel="group1" href="img/g1.jpg" class="lightboxed">
-                        <div class="img_wraper">
-                            <img loading="lazy" src="img/g1.jpg" alt="galery">
-                            <div class="hover_wraper">
-                                <div class="more">ƏTRAFLI</div>
-                            </div>
+            <div class="boxes" id="waterfall">  
+              <div class="custom">
+                <figure class="filtr-item" data-category="projects">
+                  <a rel="group1" href="img/g1.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g1.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
                         </div>
-                    </a>
-                </div>
-                </li>
-                <li  data-type="projects" class="projects all studio isotope-item">
-                    <div>
-                      <a rel="group1" href="img/g2.jpg" class="lightboxed">
-                          <div class="img_wraper">
-                              <img loading="lazy" src="img/g2.jpg" alt="galery">
-                              <div class="hover_wraper">
-                                  <div class="more">ƏTRAFLI</div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  </li>
-                  <li  data-type="events" class="events all studio isotope-item">
-                    <div>
-                      <a rel="group1" href="img/g3.jpg" class="lightboxed">
-                          <div class="img_wraper">
-                              <img loading="lazy" src="img/g3.jpg" alt="galery">
-                              <div class="hover_wraper">
-                                  <div class="more">ƏTRAFLI</div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  </li>
-                  <li  data-type="events" class="evets all studio isotope-item">
-                    <div>
-                      <a rel="group1" href="img/g4.jpg" class="lightboxed">
-                          <div class="img_wraper">
-                              <img loading="lazy" src="img/g4.jpg" alt="galery">
-                              <div class="hover_wraper">
-                                  <div class="more">ƏTRAFLI</div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  </li>
-                  <li  data-type="events" class="evets all studio isotope-item">
-                    <div>
-                      <a rel="group1" href="img/g5.jpg" class="lightboxed">
-                          <div class="img_wraper">
-                              <img loading="lazy" src="img/g5.jpg" alt="galery">
-                              <div class="hover_wraper">
-                                  <div class="more">ƏTRAFLI</div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  </li>
-                  <li  data-type="events all studio isotope-item">
-                    <div>
-                      <a rel="group1" href="img/g6.jpg" class="lightboxed">
-                          <div class="img_wraper">
-                              <img loading="lazy" src="img/g6.jpg" alt="galery">
-                              <div class="hover_wraper">
-                                  <div class="more">ƏTRAFLI</div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  </li>
-                  <li  data-type="events" class="events all studio isotope-item">
-                    <div>
-                      <a rel="group1" href="img/g7.jpg" class="lightboxed">
-                          <div class="img_wraper">
-                              <img loading="lazy" src="img/g7.jpg" alt="galery">
-                              <div class="hover_wraper">
-                                  <div class="more">ƏTRAFLI</div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  </li>
-                  <li  data-type="events" class="evets all studio isotope-item">
-                    <div>
-                      <a rel="group1" href="img/g8.jpg" class="lightboxed">
-                          <div class="img_wraper">
-                              <img loading="lazy" src="img/g8.jpg" alt="galery">
-                              <div class="hover_wraper">
-                                  <div class="more">ƏTRAFLI</div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  </li>
-                  <li  data-type="events" class="evets all studio isotope-item">
-                    <div>
-                      <a rel="group1" href="img/g9.jpg" class="lightboxed">
-                          <div class="img_wraper">
-                              <img loading="lazy" src="img/g9.jpg" alt="galery">
-                              <div class="hover_wraper">
-                                  <div class="more">ƏTRAFLI</div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  </li>
-                  <li  data-type="events" class="events all studio isotope-item">
-                    <div>
-                      <a rel="group1" href="img/g10.jpg" class="lightboxed">
-                          <div class="img_wraper">
-                              <img loading="lazy" src="img/g10.jpg" alt="galery">
-                              <div class="hover_wraper">
-                                  <div class="more">ƏTRAFLI</div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  </li>
-                  <li  data-type="events" class="evets all studio isotope-item">
-                    <div>
-                      <a rel="group1"  href="img/g11.jpg" class="lightboxed">
-                          <div class="img_wraper">
-                              <img loading="lazy" src="img/g11.jpg" alt="galery">
-                              <div class="hover_wraper">
-                                  <div class="more">ƏTRAFLI</div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  </li>
-                  <li  data-type="events" class="events all studio isotope-item">
-                    <div>
-                      <a rel="group1" " href="img/g12.jpg" class="lightboxed">
-                          <div class="img_wraper">
-                              <img loading="lazy" src="img/g12.jpg" alt="galery">
-                              <div class="hover_wraper">
-                                  <div class="more">ƏTRAFLI</div>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  </li>
-              </ul>  
+                    </div>
+                </a>
+                </figure>
+                
+                <figure class="filtr-item" data-category="projects">
+                  <a rel="group1" href="img/g2.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g2.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
+                        </div>
+                    </div>
+                </a>
+                </figure>
+        
+                <figure class="filtr-item" data-category="projects">
+                  <a rel="group1" href="img/g3.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g3.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
+                        </div>
+                    </div>
+                </a>
+                </figure>
+        
+                <figure class="filtr-item" data-category="projects">
+                  <a rel="group1" href="img/g4.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g4.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
+                        </div>
+                    </div>
+                </a>
+                </figure>
+        
+                <figure class="filtr-item" data-category="events">
+                  <a rel="group1" href="img/g5.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g5.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
+                        </div>
+                    </div>
+                </a>
+                </figure>
+        
+                <figure class="filtr-item" data-category="emotions">
+                  <a rel="group1" href="img/g6.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g6.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
+                        </div>
+                    </div>
+                </a>
+                </figure>
+        
+                <figure class="filtr-item" data-category="emotions">
+                  <a rel="group1" href="img/g7.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g7.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
+                        </div>
+                    </div>
+                </a>
+                </figure>
+        
+                <figure class="filtr-item" data-category="events">
+                  <a rel="group1" href="img/g8.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g8.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
+                        </div>
+                    </div>
+                </a>
+                </figure>
+        
+                <figure class="filtr-item" data-category="projects">
+                  <a rel="group1" href="img/g9.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g9.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
+                        </div>
+                    </div>
+                </a>
+                </figure>
+        
+                <figure class="filtr-item" data-category="projects">
+                  <a rel="group1" href="img/g10.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g10.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
+                        </div>
+                    </div>
+                </a>
+                </figure>
+        
+                <figure class="filtr-item" data-category="emotions">
+                  <a rel="group1" href="img/g11.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g11.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
+                        </div>
+                    </div>
+                </a>
+                </figure>
+        
+                <figure class="filtr-item" data-category="projects">
+                  <a rel="group1" href="img/g12.jpg" class="lightboxed">
+                    <div class="img_wraper">
+                        <img loading="lazy" src="img/g12.jpg" alt="galery">
+                        <div class="hover_wraper">
+                            <div class="more">ƏTRAFLI</div>
+                        </div>
+                    </div>
+                </a>
+                </figure>
+              </div>
 
         </div>
     </section>
     
+ 
 
+   
 
     <section id="reports" class="reports scroll">
         <div class="container">
@@ -1588,13 +1592,8 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="./Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.min.js"></script>
-    <script src="./Pinterest-Style-Responsive-Web-Layout-Plugin-For-jQuery-newWaterfall-js/newWaterfall.js"></script>
     <script src="./fullscreen-lightbox-gallery/js/lightboxed/lightboxed.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <!-- <script src="js/filter.js"></script> -->
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-    <!-- <script src="./Minimalist-Masonry-style-Grid-Layout-Plugin-Masonry-js/src/masonry.min.js"></script> -->
     <script type="module" src="js/index.js"></script></body>
 </html>

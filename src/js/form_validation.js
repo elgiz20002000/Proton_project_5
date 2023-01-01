@@ -64,11 +64,21 @@ export const formValidation = () => {
       errorFieldCssClass: "error",
     })
     .onFail(() => {
+      // if(document.querySelector('.left .text').classList.contains('just-validate-error-field')) {
+      //   document.querySelector('.left .text').classList.remove('just-validate-error-field')
+      // } else {
+      //   document.querySelector('.left .text').classList.add('just-validate-error-field')
+      // }
       error_1.style = "display:block";
       error_1.innerHTML =
         ' <div class="alert alert-danger" role="alert">* ulduzla işarələnmiş xanaları mütləq doldurun<br>Çətinlik yaşadığınız zaman <a href="https://wa.me/994504300870" target="_blank">(050) 430 08 70</a> nömrəsi ilə əlaqə saxlaya bilərsiniz</div>';
     })
     .onSuccess(() => {
+      // if(document.querySelector('.left .text').classList.contains('just-validate-success-field')) {
+      //   document.querySelector('.left .text').classList.remove('just-validate-success-field')
+      // } else {
+      //   document.querySelector('.left .text').classList.add('just-validate-success-field')
+      // }
       document.querySelector(".left form").reset();
       error_1.style = "display:block";
       error_1.innerHTML =

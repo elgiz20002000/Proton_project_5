@@ -1,5 +1,6 @@
 .just-validate-error-field {
   background-color: rgb(255, 240, 240) !important;
+  
 }
 .just-validate-error-label {
   font-size: 14px;
@@ -34,6 +35,10 @@ input {
   }
 }
 .forms {
+  .item {
+    width: 50%;
+    margin: 10px;
+  }
   position: relative;
   padding: 20px 0 40px;
   .err_doc {
@@ -128,11 +133,9 @@ input {
     }
     .left,
     .right {
-      height: 1200px;
+      height: 1120px;
       padding: 10px;
       background: white;
-      margin: 10px;
-      width: 50%;
     }
     .input {
       position: relative;
@@ -220,6 +223,21 @@ input {
     }
 
     .file_input_wrapper {
+      input[type=file] {
+        color: transparent;
+      }
+      .text {
+        background: transparent;
+        top: 5%;
+        position: absolute;
+        color: black;
+        z-index: 10;
+        width: 70%;
+        border: none;
+        height: 35px;
+        padding: 0;
+        left: 1%;
+      }
       .file_wrapper {
         position: relative;
       }
@@ -248,23 +266,15 @@ input {
         margin-top: 0 !important;
       }
     }
-    input[type="file"]::file-selector-button {
-      content: "Y";
-      position: absolute;
-      width: 80px;
-      height: 100%;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 0;
-      border: none;
-      background: #084cdf;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      cursor: pointer;
-      transition: background 0.2s ease-in-out;
-    }
+    // input[type="file"]::file-selector-button {
+    //   left: 0;
+    //   position: absolute;
+    //   width: 100%;
+    // }
+
+
+
+
 
     form {
       height: max-content;

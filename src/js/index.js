@@ -1,57 +1,23 @@
 import { button } from "./button.js";
+import { file } from "./file.js";
+import { filter } from "./filter.js";
 import { formValidation } from "./form_validation.js";
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
-
-  // $('.msrItems').msrItems({
-  //   'colums': 4, //columns number
-  //   'margin': 15 //right and bottom margin
-  // });
-
-  // $( window ).on('resize', function(e) {
-  //   time = setTimeout(function(){
-  //     $('.msrItems').msrItems('refresh');
-  //   }, 200);
-  //   clearTimeout(time);
-   
-  // })
+  file();
 
   button();
-  let $grid = $('.boxes').isotope()
 
-  const types = document.querySelectorAll('.types .type')
-  types.forEach(item => {
-    item.addEventListener('click' , () => {
-    types.forEach(item => item.classList.remove('active'))
-      item.classList.add('active')
-      if(item.getAttribute('data-filter') != 'all') {
-        $grid.isotope({ filter: `li.${item.getAttribute('data-filter')}`})
-      } else {
-        $grid.isotope({ filter: `*`})
-      }
-    })
-  })
+  filter()
 
-  $("#waterfall").NewWaterfall({
-    width: 270,
-    delay: 60,
-    repeatShow: false,
-  });
-
-
-  $('.grid').isotope({
-    percentPosition: true,
-    itemSelector: '.grid-item',
-    masonry: {
-      columnWidth: '.grid-sizer'
-    }
-  })
+  // $("#waterfall").NewWaterfall({
+  //   width: 270,
+  //   delay: 60,
+  //   repeatShow: false,
+  // });
 
   $(".promo .slider").slick({
-    autoplay: true,
+    // autoplay: true,
     slidesToShow: 1,
     autoplaySpeed: 10000,
     slideToScroll: 1,
@@ -90,9 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
           slidesToShow: 2,
         },
       },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
     ],
   });
-
 
   formValidation();
 
@@ -123,11 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-
-
-
-
-
   const types_info = document.querySelectorAll(".type .info");
   types_info.forEach((item, index) => {
     if (
@@ -136,12 +102,12 @@ document.addEventListener("DOMContentLoaded", () => {
         [index].getAttribute("data-filter") != "all"
     ) {
       item.textContent = document.querySelectorAll(
-        `#waterfall li[data-type=${document
+        `.custom figure[data-category=${document
           .querySelectorAll(".types .type")
           [index].getAttribute("data-filter")}]`
       ).length;
     } else {
-      item.textContent = document.querySelectorAll("#waterfall li").length;
+      item.textContent = document.querySelectorAll(".custom figure").length;
     }
   });
 
@@ -615,3 +581,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })();
 });
+
+
+
+
+

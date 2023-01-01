@@ -57,6 +57,8 @@ button[type=button] {
         z-index: 10;
         position: absolute;
         top: 50%;
+        width: max-content;
+        height: max-content;
         &::before {     
             content: url('../icon/arrow.svg');
         }
@@ -113,8 +115,6 @@ button[type=button] {
         }
         &:hover {
             .slick-next , .slick-prev { 
-                width: max-content;
-                height: max-content;
                 opacity: 1;
             }
         }

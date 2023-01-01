@@ -14,12 +14,9 @@
     grid-template-rows: 1fr auto;
     margin-bottom: 10px;
     break-inside: avoid;
-    // transition: all 0.3s ease-in-out;
     &.active {
-      transition: 0.3s all ;
+      transition: 0.3s all;
       transform: scale(0);
-      width: 0;
-      height: 0;
     }
   }
 

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // });
 
   $(".promo .slider").slick({
-    // autoplay: true,
+    autoplay: true,
     slidesToShow: 1,
     autoplaySpeed: 10000,
     slideToScroll: 1,
